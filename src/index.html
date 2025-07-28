@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/098c2dda99.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Todo List</h1>
+        <div class="header-actions">
+          <button id="new-project-btn">
+            <i class="fa-solid fa-folder-plus"></i> New Project
+          </button>
+          <button id="new-todo-btn">
+            <i class="fa-solid fa-plus"></i> New Todo
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <aside>
+          <h2>Projects</h2>
+          <div id="project-list"></div>
+        </aside>
+
+        <section class="todos">
+          <h2>Todos</h2>
+          <div id="todo-list"></div>
+        </section>
+      </main>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

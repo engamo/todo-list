@@ -1,0 +1,146 @@
+:root {
+  --primary: #6c63ff;
+  --primary-hover: #342af1;
+  --background: #f4f4f4;
+  --text-dark: #222;
+  --priority-high: #e74c3c;
+  --priority-medium: #f39c12;
+  --priority-low: #2ecc71;
+  --font: "kanit", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--background);
+  color: var(--text-dark);
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+header h1 {
+  color: var(--primary);
+}
+
+.header-actions button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  gap: 2rem;
+}
+
+aside {
+  width: 30%;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside button {
+  display: block;
+  margin-top: 1rem;
+}
+
+#project-list button {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  text-align: left;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#project-list button:hover {
+  background-color: var(--primary-hover);
+  color: white;
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+}
+
+.todos {
+  width: 70%;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item strong {
+  font-size: 1.1rem;
+}
+
+.todo-item span {
+  font-size: 0.9rem;
+}
+
+.todo-item button {
+  margin-left: 1rem;
+  background-color: var(--primary);
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 5px;
+}
+.project-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.project-btn {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  text-align: left;
+}
+
+.delete-project {
+  font-size: 1rem;
+  color: red;
+  cursor: pointer;
+}
